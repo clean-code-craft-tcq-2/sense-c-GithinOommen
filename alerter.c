@@ -1,7 +1,7 @@
 #include "alerter.h"
-Void ledAlerter()
+void ledAlerter()
 {
 }
-Void emailAlerter()
+void emailAlerter()
 {
 }
