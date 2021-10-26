@@ -9,16 +9,20 @@ struct Stats s;
     float sum=0,min=0,max=0;
     min=numberset[0];
     max=numberset[0];
-    for(i=0;i<setlength;++i)
+for(i=0;i<setlength;++i)
     {
         sum=sum+numberset[i];
-        if(min>numberset[i+1])
+        
+    }
+    for(i=1;i<setlength;++i)
+    {
+        if(numberset[i]<min)
         {
-            min=numberset[i+1];
+            min=numberset[i];
         }
-        if(max<numberset[i+1])
+        if(numberset[i]>max)
         {
-            max=numberset[i+1];
+            max=numberset[i];
         }
     }
     s.average = sum/setlength;
