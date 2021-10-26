@@ -6,7 +6,7 @@ struct Stats s;
     s.min = 0;
     s.max = 0;
     int i;
-    float sum=0,min,max;
+    float sum=0,min=0,max=0;
     min=numberset[0];
     max=numberset[0];
     for(i=0;i<setlength;++i)
