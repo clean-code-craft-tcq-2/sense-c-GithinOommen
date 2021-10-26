@@ -1,5 +1,6 @@
 #include "alerter.h"
 #include "stats.h"
+int ledAlertCallCount,emailAlertCallCount=0;
 void ledAlerter()
 {
    ledAlertCallCount= ledAlertCallCount+1;
